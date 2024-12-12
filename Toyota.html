@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link rel="stylesheet" href="EstiloToyota.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+      <header class="HederCatalogo">
+        <!-- place navbar here -->
+  
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar scroll</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Formulario.html">Cotizar</a>
+                  </li>
+                  
+              </div>
+            </div>
+          </nav>
+  
+  
+  
+        <nav class="navbar navbar-expand-lg navbar-bottom">
+            <div class="container">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBottom" aria-controls="navbarBottom" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarBottom">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item"><a class="nav-link" href="Ferrari.html">Ferrari</a></li>
+                  <li class="nav-item"><a class="nav-link" href="Lamborghini.html">Lamborghini</a></li>
+                  <li class="nav-item"><a class="nav-link" href="Ford.html">Ford</a></li>
+                  <li class="nav-item"><a class="nav-link" href="Toyota.html">Toyota</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="th-video-element"><video autoplay="true" class="video-player show" data-video-src-mobile="/content/dam/toyota/vehicles/2025/grsupra/mlp/welcomemat/SUP_MY25_NA-CAMP_MLP_Mobile_TYCK2977000H.mp4?wid=767" data-video-src-tablet="/content/dam/toyota/vehicles/2025/grsupra/mlp/welcomemat/SUP_MY25_NA-CAMP_MLP_desktop_TYCK2978000H.mp4?wid=1439" data-video-src-desktop="/content/dam/toyota/vehicles/2025/grsupra/mlp/welcomemat/SUP_MY25_NA-CAMP_MLP_desktop_TYCK2978000H.mp4?wid=1919" data-video-src-lg-desktop="/content/dam/toyota/vehicles/2025/grsupra/mlp/welcomemat/SUP_MY25_NA-CAMP_MLP_desktop_TYCK2978000H.mp4?wid=1920" data-autoplay="true" data-loop="true" muted="" playsinline="" loop="true">
+           <source src="/content/dam/toyota/vehicles/2025/grsupra/mlp/welcomemat/SUP_MY25_NA-CAMP_MLP_desktop_TYCK2978000H.mp4?wid=1919" type="video/mp4"> <track kind="descriptions" src="/content/dam/toyota/webvtt/default.vtt" srclang="en">
+          </video></div>
+  
+    </header>
+    
+
+
+    <main class="container my-5">
+<!-- Sección Vagonetas Toyota -->
+<section class="mt-5">
+  <h3 class="text-center mb-4 text-danger">VAGONETAS TOYOTA</h3>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <!-- Vehículo 1 -->
+    <div class="col">
+      <div class="vehicle-card border border-danger">
+        <img src="Corolla Cross.jpg" alt="Corolla Cross" class="img-fluid">
+        <h5 class="text-danger">VAGONETA COMPACTA HÍBRIDA</h5>
+        <p class="nameCarros">COROLLA CROSS</p>
+        <p class="vehicle-price">25,000 $us</p>
+        <p><a href="#" class="text-decoration-none text-danger">📄 Ver Ficha Técnica</a></p>
+        <p class="vehicle-installment">Cuota bancaria desde <strong class="text-danger">450 $us</strong> al mes</p>
+        <button class="btn btn-danger btn-quote" onclick="showQuoteForm('Corolla Cross', 'VAGONETA COMPACTA HÍBRIDA', '25,000 $us', '450 $us', 'Corolla Cross.jpg')">COTIZAR</button>
+      </div>
+    </div>
+
+    <!-- Vehículo 2 -->
+    <div class="col">
+      <div class="vehicle-card border border-danger">
+        <img src="Toyota-RAV4-Hybrid.jpg" alt="RAV4" class="img-fluid">
+        <h5 class="text-danger">VAGONETA DEPORTIVA HÍBRIDA</h5>
+        <p class="nameCarros">RAV4 HYBRID</p>
+        <p class="vehicle-price">38,000 $us</p>
+        <p><a href="#" class="text-decoration-none text-danger">📄 Ver Ficha Técnica</a></p>
+        <p class="vehicle-installment">Cuota bancaria desde <strong class="text-danger">700 $us</strong> al mes</p>
+        <button class="btn btn-danger btn-quote" onclick="showQuoteForm('RAV4 HYBRID', 'VAGONETA DEPORTIVA HÍBRIDA', '38,000 $us', '700 $us', 'Toyota-RAV4-Hybrid.jpg')">COTIZAR</button>
+      </div>
+    </div>
+
+    <!-- Vehículo 3 -->
+    <div class="col">
+      <div class="vehicle-card border border-danger">
+        <img src="Toyota Highlander.jpg" alt="Highlander" class="img-fluid">
+        <h5 class="text-danger">VAGONETA DE LUJO HÍBRIDA</h5>
+        <p class="nameCarros">HIGHLANDER HYBRID</p>
+        <p class="vehicle-price">46,000 $us</p>
+        <p><a href="#" class="text-decoration-none text-danger">📄 Ver Ficha Técnica</a></p>
+        <p class="vehicle-installment">Cuota bancaria desde <strong class="text-danger">850 $us</strong> al mes</p>
+        <button class="btn btn-danger btn-quote" onclick="showQuoteForm('HIGHLANDER HYBRID', 'VAGONETA DE LUJO HÍBRIDA', '46,000 $us', '850 $us', 'Toyota Highlander.jpg')">COTIZAR</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección Toyota Todoterreno -->
+<section class="mt-5">
+  <h3 class="text-center mb-4 text-danger">TOYOTA TODOTERRENO</h3>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <!-- Vehículo 1 -->
+    <div class="col">
+      <div class="vehicle-card border border-danger">
+        <img src="Toyota-Tacoma-TRD.webp" alt="Tacoma" class="img-fluid">
+        <h5 class="text-danger">CAMIONETA DEPORTIVA</h5>
+        <p class="nameCarros">TACOMA TRD</p>
+        <p class="vehicle-price">34,000 $us</p>
+        <p><a href="#" class="text-decoration-none text-danger">📄 Ver Ficha Técnica</a></p>
+        <p class="vehicle-installment">Cuota bancaria desde <strong class="text-danger">650 $us</strong> al mes</p>
+        <button class="btn btn-danger btn-quote" onclick="showQuoteForm('TACOMA TRD', 'CAMIONETA DEPORTIVA', '34,000 $us', '650 $us', 'Toyota-Tacoma-TRD.webp')">COTIZAR</button>
+      </div>
+    </div>
+
+    <!-- Vehículo 2 -->
+    <div class="col">
+      <div class="vehicle-card border border-danger">
+        <img src="Toyota-Landcruiser.jpg" alt="Land Cruiser" class="img-fluid">
+        <h5 class="text-danger">TODO TERRENO DE LUJO</h5>
+        <p class="nameCarros">LAND CRUISER</p>
+        <p class="vehicle-price">90,000 $us</p>
+        <p><a href="#" class="text-decoration-none text-danger">📄 Ver Ficha Técnica</a></p>
+        <p class="vehicle-installment">Cuota bancaria desde <strong class="text-danger">1,600 $us</strong> al mes</p>
+        <button class="btn btn-danger btn-quote" onclick="showQuoteForm('LAND CRUISER', 'TODO TERRENO DE LUJO', '90,000 $us', '1,600 $us', 'Toyota-Landcruiser.jpg')">COTIZAR</button>
+      </div>
+    </div>
+
+    <!-- Vehículo 3 -->
+    <div class="col">
+      <div class="vehicle-card border border-danger">
+        <img src="Supra_TRD.jpg" alt="GR Supra" class="img-fluid">
+        <h5 class="text-danger">DEPORTIVO DE ALTO RENDIMIENTO</h5>
+        <p class="nameCarros">GR SUPRA</p>
+        <p class="vehicle-price">56,000 $us</p>
+        <p><a href="#" class="text-decoration-none text-danger">📄 Ver Ficha Técnica</a></p>
+        <p class="vehicle-installment">Cuota bancaria desde <strong class="text-danger">1,000 $us</strong> al mes</p>
+        <button class="btn btn-danger btn-quote" onclick="showQuoteForm('GR SUPRA', 'DEPORTIVO DE ALTO RENDIMIENTO', '56,000 $us', '1,000 $us', 'Supra_TRD.jpg')">COTIZAR</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+        
+        
+
+
+          <footer class="footer">
+            <div class="container">
+              <div class="row text-center">
+                <!-- Primera Sección -->
+                <div class="col-md-3 footer-section">
+                  <h5 onclick="toggleLinks('links1', 'icon1')" class="collapsed">
+                    ACERCA DE <span id="icon1">+</span>
+                  </h5>
+                  <hr>
+                  <div id="links1" class="footer-links">
+                    <a href="#">Nuestro equipo</a>
+                    <a href="#">Historia</a>
+                    <a href="#">Carreras</a>
+                  </div>
+                </div>
+          
+                <!-- Segunda Sección -->
+                <div class="col-md-3 footer-section">
+                  <h5 onclick="toggleLinks('links2', 'icon2')" class="collapsed">
+                    COMERCIO <span id="icon2">+</span>
+                  </h5>
+                  <hr>
+                  <div id="links2" class="footer-links">
+                    <a href="#">Productos</a>
+                    <a href="#">Servicios</a>
+                    <a href="#">Soporte</a>
+                  </div>
+                </div>
+          
+                <!-- Tercera Sección -->
+                <div class="col-md-3 footer-section">
+                  <h5 onclick="toggleLinks('links3', 'icon3')" class="collapsed">
+                    PROPIETARIOS <span id="icon3">+</span>
+                  </h5>
+                  <hr>
+                  <div id="links3" class="footer-links">
+                    <a href="#">Portal del propietario</a>
+                    <a href="#">Servicios de mantenimiento</a>
+                    <a href="#">Contacto</a>
+                  </div>
+                </div>
+          
+                <!-- Cuarta Sección -->
+                <div class="col-md-3 footer-section">
+                  <h5 onclick="toggleLinks('links4', 'icon4')" class="collapsed">
+                    OFERTAS Y FINANCIACIÓN <span id="icon4">+</span>
+                  </h5>
+                  <hr>
+                  <div id="links4" class="footer-links">
+                    <a href="#">Promociones</a>
+                    <a href="#">Financiamiento</a>
+                    <a href="#">Soporte financiero</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Redes Sociales -->
+            <div class="social-icons">
+              <div class="social-divider"></div>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+              <div class="social-divider"></div>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <div class="social-divider"></div>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <div class="social-divider"></div>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <div class="social-divider"></div>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <div class="social-divider"></div>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+              <div class="social-divider"></div>
+            </div>
+
+          </footer>
+          
+        <!-- Bootstrap JavaScript Libraries -->
+         <script src="Funcion.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

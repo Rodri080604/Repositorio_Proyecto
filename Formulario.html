@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+      .navbar-custom {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 15%;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0); 
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+     
+}
+.navbar-custom.shrink {
+    background: rgb(255, 255, 255); 
+    padding: 5px 0;
+    box-shadow: 0 4px 6px rgba(255, 255, 255); 
+    
+    
+}
+ain {
+    padding-top: 80px;
+     
+}
+    </style>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-custom">
+              <div class="container-fluid">
+                <h1>CONSECIONARIA</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                  <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="Ferrari.html">Vehículos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Formulario.html">Cotizar</a>
+                    </li>
+                    
+                </div>
+              </div>
+            </nav>
+
+
+
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Imagenes_Preyecto_integrador/Muscles/Mustang 64.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Imagenes_Preyecto_integrador/Muscles/Mustang 64.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Imagenes_Preyecto_integrador/Muscles/portada1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
+          </header>
+
+
+
+          
+    <main class="container my-5">
+      
+      <div class="col">
+        <form>
+          <h4>¡Completa el formulario y te contactaremos lo más pronto posible!</h4>
+          <div class="mb-3">
+            <label for="first-name" class="form-label">Nombres</label>
+            <input type="text" class="form-control" id="first-name" placeholder="Ingresa tu(s) nombre(s)">
+          </div>
+          <div class="mb-3">
+            <label for="last-name" class="form-label">Apellidos</label>
+            <input type="text" class="form-control" id="last-name" placeholder="Ingresa tus apellidos">
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Teléfono</label>
+            <input type="text" class="form-control" id="phone" placeholder="Ingresa tu número de teléfono">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Ingresa tu email">
+          </div>
+          <div class="mb-3">
+            <label for="document" class="form-label">Documento</label>
+            <select class="form-select" id="document">
+              <option value="Carnet Identidad">Carnet Identidad</option>
+              <option value="Pasaporte">Pasaporte</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="payment-method" class="form-label">Forma de pago</label>
+            <select class="form-select" id="payment-method">
+              <option value="Contado">Contado</option>
+              <option value="Financiado">Financiado</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="city"
+    </main>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script src="Funcion.js"></script>
+    <script>
+      // Función para actualizar el formulario con la información del vehículo seleccionado
+      function showForm(name, model, price, installment) {
+        document.getElementById('vehicle-name').textContent = name;
+        document.getElementById('vehicle-model').textContent = model;
+        document.getElementById('vehicle-price').textContent = price + ' $us';
+        document.getElementById('vehicle-installment').innerHTML = `Cuota bancaria desde <strong>${installment} $us</strong> al mes`;
+        document.getElementById('vehicle-img').src = 'https://via.placeholder.com/300'; // Puedes cambiar la imagen según el vehículo seleccionado
+      }
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+
+

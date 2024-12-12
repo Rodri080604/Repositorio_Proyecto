@@ -1,0 +1,222 @@
+.header-catalogo {
+    position: relative;
+    height: 100vh; /* Ajustar el header a la altura de la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Espaciado entre barras superior e inferior */
+    z-index: 10; /* Asegura que esté encima de otros elementos */
+    overflow: hidden; /* Oculta contenido fuera del header */
+    z-index: 10;
+  }
+  
+  .header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Escalar para cubrir todo el header */
+    z-index: -10; /* Asegura que el video quede detrás del contenido */
+  }
+  
+  /* Barra de navegación superior */
+  .navbar-custom {
+    padding: 10px 0;
+    z-index: 1; /* Asegura que quede encima del video */
+    background: rgba(0, 0, 0, 0.5); /* Fondo transparente sobre el video */
+  }
+  
+  .navbar-custom .nav-link,
+  .navbar-custom .btn-build {
+    color: white;
+  }
+  
+  .navbar-custom .nav-link:hover {
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Barra de navegación inferior */
+  .navbar-bottom {
+    z-index: 1; /* También encima del video */
+    background: rgba(0, 0, 0, 0.5); /* Fondo transparente */
+  }
+  
+  .navbar-bottom .nav-link,
+  .navbar-bottom .btn-quote {
+    color: white;
+  }
+  
+  
+  /* Cambios al hacer scroll */
+  .header-catalogo.scrolled .navbar-custom,
+  .header-catalogo.scrolled .navbar-bottom {
+    background: #000; /* Cambia a opaco */
+  }
+  .th-video-element{
+    z-index: -10;
+  }
+body {
+    font-family: Arial, sans-serif;
+  }
+
+  .header-section {
+    background-color: #003399;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .header-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .catalog-title {
+    margin: 40px 0;
+    text-align: center;
+    color: #333;
+  }
+
+  main {
+    padding: 20px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 50px;
+    text-align: center;
+    background: linear-gradient(145deg, #001f5b, #003d99, #ffffff); /* Azul Ford con blanco */
+    color: #ffffff;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.vehicle-card {
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    background-color: #ffffffcc; /* Blanco translúcido */
+    transition: box-shadow 0.3s ease;
+}
+
+.vehicle-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* Imagen del vehículo */
+.vehicle-card img {
+    width: 380px; /* Ajusta según tus necesidades */
+    height: 250px; /* Mantén el mismo alto */
+    object-fit: cover; /* Ajusta cómo la imagen se escala dentro del contenedor */
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 31, 91, 0.5); /* Azul Ford */
+}
+
+/* Estilo para el precio */
+.vehicle-price {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #003d99; /* Azul Ford clásico */
+    margin-top: 10px;
+}
+
+/* Botón de cotización */
+.btn-quote {
+    background: linear-gradient(145deg, #003d99, #001f5b); /* Azul degradado Ford */
+    color: #ffffff;
+    border: 1px solid #bbb; /* Plateado */
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-quote:hover {
+    background: linear-gradient(145deg, #001f5b, #003d99);
+    box-shadow: 0 4px 10px rgba(0, 61, 153, 0.6);
+}
+
+/* Títulos */
+h3.text-center {
+    padding: 20px;
+    color: #003d99; /* Azul Ford */
+    text-shadow: 0 2px 5px rgba(255, 255, 255, 0.6);
+}
+
+/* Nombre Autos */
+.NombreCarro {
+    padding: 10px;
+    color: #001f5b; /* Azul oscuro */
+}
+
+
+  /* Footer */
+.footer {
+    background-color: #1d1d1d;
+    color: #fff;
+    padding: 30px 0;
+    width: 100%;
+}
+
+.footer h5 {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #cccccc;
+    cursor: pointer;
+    text-align: center;
+}
+
+.footer hr {
+    border-color: #444;
+    margin: 15px 0;
+}
+
+.footer .footer-section {
+    text-align: center;
+}
+
+/* Enlaces del footer */
+.footer-links {
+    display: none;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.footer-links a {
+    color: #cccccc;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+/* Redes sociales */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    color: #cccccc;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+.social-divider {
+    height: 1px;
+    width: 40px;
+    background-color: #444;
+    margin: 0 10px;
+}

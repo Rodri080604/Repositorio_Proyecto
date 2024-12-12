@@ -1,0 +1,240 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+  .navbar-custom {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 20%;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0); 
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease; 
+  }
+  .navbar-custom.shrink {
+    background: rgb(255, 255, 255); 
+    padding: 5px 0;
+    box-shadow: 0 4px 6px rgba(255, 255, 255); 
+  }
+  .ain {
+    padding-top: 80px; 
+  }
+
+
+
+.seccion1 {
+    padding: 50px 20px;
+    background-color: #a7a7a7; 
+  }
+
+  .seccion2 {
+    padding: 50px 20px;
+    background-color: #e9ecef; 
+  }
+
+  .seccion2 .card-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 50px; 
+    justify-content: center; 
+  }
+
+  .seccion2 .card {
+    flex: 1 1 calc(33.333% - 20px); 
+    max-width: 20rem; 
+    background: #a7a7a700;
+  }
+
+  @media (max-width: 768px) {
+    .seccion2 .card {
+      flex: 1 1 100%; 
+    }
+}
+.seccion3 {
+    padding: 50px 20px;
+    background-color: #cccccc; 
+  }
+
+  .seccion3 .card-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 60px; 
+    justify-content: center; 
+  }
+
+  .seccion3 .card {
+    flex: 1 1 calc(33.333% - 20px); 
+    max-width: 20rem; 
+    background: #a7a7a700;
+    border: 0cap;
+  }
+
+
+
+  .TitPagPrin{
+    font-weight: bold;
+    font-style: inherit;
+    padding: 15px;
+  }
+
+
+
+/*Main Catalogo*/
+.vehicle-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .vehicle-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  .nameCarros {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .vehicle-price {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  .vehicle-installment {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  .btn-quote {
+    background-color: #2d2b5e;
+    color: white;
+    border-radius: 20px;
+  }
+  .btn-quote:hover {
+    background-color: #1b193d;
+  }
+
+
+
+
+
+/*Estilo Ferrari*/
+
+
+
+
+
+/*----------------------------------------------------------------------------------------*/
+
+
+/*Estilo Porshe*/
+/*----------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------------*/
+
+/*Estilo Ford*/
+/*----------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------------*/
+
+/*Estilo Mercedez Benz*/
+/*----------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------------*/
+
+/*Estilo Chevrolet*/
+/*----------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------*/
+/*Footer*/
+  .footer {
+    background-color: #1d1d1d;
+    color: #fff;
+    padding: 30px 0;
+    width: 100%;
+    position: relative;
+  }
+  
+  .footer h5 {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #cccccc;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer h5 span {
+    margin-left: 5px;
+    transition: transform 0.3s;
+  }
+  
+  .footer hr {
+    border-color: #444;
+    margin: 15px 0;
+  }
+  
+  .footer .footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Ocultar enlaces por defecto */
+  .footer-links {
+  display: none; /* Oculto inicialmente */
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  }
+  
+  .footer-links a {
+    color: #cccccc;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #fff;
+  }
+  
+  /* Redes sociales con divisores */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: #cccccc;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #fff; /* Cambia el color de los íconos al pasar el mouse */
+}
+
+.social-divider {
+  height: 1px;
+  width: 40px; /* Ancho de las líneas divisorias */
+  background-color: #444; /* Color de las líneas */
+  margin: 0 10px;
+}
+
+
